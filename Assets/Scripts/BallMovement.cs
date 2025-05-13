@@ -28,7 +28,7 @@ public class BallMovement : MonoBehaviour
     }
     void Update()
     {
-        if(!isLaunched && Input.GetKeyDown(KeyCode.W)){
+        if(!isLaunched && Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.UpArrow)){
             LaunchBall();
             isLaunched = true;
         }
